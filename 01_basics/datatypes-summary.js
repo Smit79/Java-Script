@@ -35,3 +35,24 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//  -------------- Memory Reference ( Stack or Heap ) ------------------------ //
+let animal = "Dog"
+
+let anotheranimal = animal;
+anotheranimal = "Cat";
+
+console.log(animal);
+console.log(anotheranimal);
+
+let userone = {
+    userId : "XYZ",
+    password : 1672
+}
+
+let usertwo = userone
+
+usertwo.password = 9546;
+
+console.log(userone.password);
+console.log(usertwo.password);
